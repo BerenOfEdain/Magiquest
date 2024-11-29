@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=" {{ url_for('static', filename='common.js') }} "></script>
+<script src=" {{ url_for('static', filename='goblin_script.js') }} "></script>
+</head>
+<body onload="main();">
+<h3>Magi Health: <span id="magi_hp">80</span> hp</h3>
+<h3>Goblin King Health: <span id="goblin_hp">80</span> hp</h3>
+<center>
+  <video id="boss_video" width="960" height="720" autoplay loop playsinline>
+    <source src="static/goblin.mp4" type="video/mp4" />
+  </video>
+  <div id="buttons">
+    <button onclick="cast_spell(0);">Lightning</button>
+  </div>
+</center>
+</body>
+<script>maybe_hide_buttons();</script>
+</html>

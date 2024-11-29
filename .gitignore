@@ -1,0 +1,12 @@
+.DS_Store
+.git
+.venv
+data.db
+static/dragon.mp4
+static/goblin.mp4
+static/ice_dragon.mp4
+static/silver_dragon.mp4
+static/converted
+static/img
+static/snd
+templates/xavier.html

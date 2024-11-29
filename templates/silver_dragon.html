@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=" {{ url_for('static', filename='common.js') }} "></script>
+<script src=" {{ url_for('static', filename='silver_dragon_script.js') }} "></script>
+</head>
+<body onload="main();">
+<h3>Magi Health: <span id="magi_hp">80</span> hp</h3>
+<h3>Silver Dragon Health: <span id="silver_dragon_hp">80</span> hp</h3>
+<center>
+  <video id="boss_video" width="960" height="720" autoplay loop playsinline>
+    <source src="static/silver_dragon.mp4" type="video/mp4" />
+  </video>
+  <div id="buttons">
+    <button onclick="choose(0);">red</button>
+    <button onclick="choose(1);">blue</button>
+    <button onclick="choose(2);">white</button>
+    <button onclick="choose(3);">orange</button>
+    <button onclick="choose(4);">purple</button>
+  </div>
+</center>
+</body>
+<script>maybe_hide_buttons();</script>
+</html>

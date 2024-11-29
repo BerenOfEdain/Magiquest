@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=" {{ url_for('static', filename='common.js') }} "></script>
+<script src=" {{ url_for('static', filename='dragon_script.js') }} "></script>
+</head>
+<body onload="main();">
+<h3>Magi Health: <span id="magi_hp">80</span> hp</h3>
+<h3>Dragon Health: <span id="dragon_hp">80</span> hp</h3>
+<center>
+  <video id="boss_video" width="960" height="600" autoplay loop playsinline>
+    <source src="static/dragon.mp4" type="video/mp4" />
+  </video>
+  <div id="buttons" onload="foo();">
+    <button onclick="cast_spell(1);">Shield</button>
+    <button onclick="cast_spell(2);">Freeze</button>
+    <button onclick="cast_spell(3);">Ice Arrow</button>
+  </div>
+</center>
+</body>
+<script>maybe_hide_buttons();</script>
+</html>
